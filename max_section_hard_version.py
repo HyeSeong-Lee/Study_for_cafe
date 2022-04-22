@@ -15,7 +15,7 @@ right의 경우 오른쪽의 최대합을 저장하되 아직 자신은 합에 �
 자기 자신을 제외시키는 이유는 합산하면서 자기 자신이 중복되어 더해지는 경우를 방지하기 위해섭니다.
 결론적으로, 결과 result는
 result[i]=left[i]+right[i]+nums[i]가 됩니다.
-시간복잡도는 O(n)입니다.(T(n)을 구하라는 조건은 없었습니다)
+시간복잡도는 O(n)입니다.
 """
 nums=list(map(int,input().split())) #입력
 left,right=[0]*len(nums),[0]*len(nums) #각 배열 선언
