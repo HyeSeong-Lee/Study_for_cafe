@@ -1,0 +1,8 @@
+import sys
+houses=list(map(int,input().split()))
+left, right,n, result=0, sum(houses), len(houses), sys.maxsize
+for i in range(n):
+  right-=houses[i]
+  result=min(result,right-(n-(i+1))*houses[i]+i*houses[i]-left)
+  left+=houses[i]
+print(result)
